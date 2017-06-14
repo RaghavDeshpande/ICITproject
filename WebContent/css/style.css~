@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* font CSS :: Starts */
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+.font-regular {
+    font-family: 'RobotoRegular',Arial,sans-serif;
+}
+
+.font-medium {
+    font-family: 'RobotoMedium',Arial,sans-serif;
+}
+
+.font-xs {
+    font-size: 10px;
+}
+
+.font-sm {
+    font-size: 12px;
+}
+
+.font-md {
+    font-size: 14px;
+}
+
+.font-lg {
+    font-size: 20px;
+}
+
+.font-xl {
+    font-size: 24px;
+}
+/* font CSS :: Ends */
+
+/* Common CSS :: Starts */
+.v-margin-xxs {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.v-margin-xs {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.v-margin-sm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.v-margin-md {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.row-no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.block {
+    display: block;
+}
+/* input width CSS :: Starts */
+input.xxxs {
+    width: 5%;
+}
+
+input.xxs {
+    width: 10%;
+}
+
+input.xs, .xs {
+    width: 20%;
+}
+
+input.sm {
+    width: 40%;
+}
+
+input.md {
+    width: 60%;
+}
+
+input.lg {
+    width: 80%;
+}
+
+input.xl {
+    width: 100%;
+}
+/* input width CSS :: Ends */
+
+/* my experiment :: Starts*/
+.ui-autocomplete {
+    position: absolute;
+    z-index: 2150000000 !important;
+    cursor: default;
+    border: 2px solid #ccc;
+    padding: 5px 0;
+    border-radius: 2px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul.ui-autocomplete {
+    font: font-regular;
+    font-size: 13px;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+input.btn-space {
+    margin-right: 5px;
+}
+
+/* my experiment :: Ends*/
+
+/* Common CSS :: Ends */
+
+/* Bootstrap Overrides */
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.table thead {
+    border-top: 2px solid rgb(204, 204, 204);
+}
+
+table.table thead > tr > th {
+    color: #494949;
+}
+
+table.table tbody > tr > td {
+    border-top: none;
+    border-bottom: 1px solid #DDD;
+}
+
+/*http://hawkee.com/snippet/16154/*/
+
+/* start Ganesh */
+table.table-grid tbody > tr > td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.panel-custom {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: white;
+}
+
+/*
+.table.table>tbody>tr:nth-child(even)>td
+{
+    border-top: none;
+    padding-top:0px;
+}
+.table.table>tbody>tr:nth-child(odd)>td
+{
+    border-top: none;
+    border-bottom: none;
+    margin-top:0px;
+}
+*/
+/* end Ganesh*/
